@@ -1,0 +1,15 @@
+C:\Users\tanulo.MECHWARTLAN\Documents\Szabó Botond\2. Feladat\2. Feladat\bin\Debug\net7.0\2. Feladat.exe
+C:\Users\tanulo.MECHWARTLAN\Documents\Szabó Botond\2. Feladat\2. Feladat\bin\Debug\net7.0\2. Feladat.deps.json
+C:\Users\tanulo.MECHWARTLAN\Documents\Szabó Botond\2. Feladat\2. Feladat\bin\Debug\net7.0\2. Feladat.runtimeconfig.json
+C:\Users\tanulo.MECHWARTLAN\Documents\Szabó Botond\2. Feladat\2. Feladat\bin\Debug\net7.0\2. Feladat.dll
+C:\Users\tanulo.MECHWARTLAN\Documents\Szabó Botond\2. Feladat\2. Feladat\bin\Debug\net7.0\2. Feladat.pdb
+C:\Users\tanulo.MECHWARTLAN\Documents\Szabó Botond\2. Feladat\2. Feladat\obj\Debug\net7.0\2. Feladat.csproj.AssemblyReference.cache
+C:\Users\tanulo.MECHWARTLAN\Documents\Szabó Botond\2. Feladat\2. Feladat\obj\Debug\net7.0\2. Feladat.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tanulo.MECHWARTLAN\Documents\Szabó Botond\2. Feladat\2. Feladat\obj\Debug\net7.0\2. Feladat.AssemblyInfoInputs.cache
+C:\Users\tanulo.MECHWARTLAN\Documents\Szabó Botond\2. Feladat\2. Feladat\obj\Debug\net7.0\2. Feladat.AssemblyInfo.cs
+C:\Users\tanulo.MECHWARTLAN\Documents\Szabó Botond\2. Feladat\2. Feladat\obj\Debug\net7.0\2. Feladat.csproj.CoreCompileInputs.cache
+C:\Users\tanulo.MECHWARTLAN\Documents\Szabó Botond\2. Feladat\2. Feladat\obj\Debug\net7.0\2. Feladat.dll
+C:\Users\tanulo.MECHWARTLAN\Documents\Szabó Botond\2. Feladat\2. Feladat\obj\Debug\net7.0\refint\2. Feladat.dll
+C:\Users\tanulo.MECHWARTLAN\Documents\Szabó Botond\2. Feladat\2. Feladat\obj\Debug\net7.0\2. Feladat.pdb
+C:\Users\tanulo.MECHWARTLAN\Documents\Szabó Botond\2. Feladat\2. Feladat\obj\Debug\net7.0\2. Feladat.genruntimeconfig.cache
+C:\Users\tanulo.MECHWARTLAN\Documents\Szabó Botond\2. Feladat\2. Feladat\obj\Debug\net7.0\ref\2. Feladat.dll
