@@ -82,3 +82,29 @@ foreach (string[] jatek in Jatekok)
 Console.WriteLine(melyikekben);
 */
 //c. Valasz: 1;2;3;4;5;7;8;9;10;11;13;14;16;18;19;20;21;
+
+
+
+
+//e.
+/*
+bool volt = false;
+int hany = 0;
+foreach (var jatek in Jatekok)
+{
+    volt = false;
+    for (int i = 0; i < jatek.Length; i++)
+    {
+        if (i % 2 != 0 && jatek[i].Contains('K'))
+        {
+            volt = true;
+        }
+    }
+    if (!volt)
+    {
+        hany++;
+    }
+}
+Console.WriteLine(hany);
+*/
+//e Valasz: 10
