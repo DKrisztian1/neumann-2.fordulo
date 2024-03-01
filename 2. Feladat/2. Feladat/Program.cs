@@ -46,7 +46,7 @@ Console.WriteLine(hanyMezon);
 
 
 //c
-
+/*
 string melyikekben = "";
 int jatekSzam = 1;
 bool kiralynoKill = false;
@@ -54,7 +54,7 @@ string feherQueenPozicio = "d1";
 string feketeQueenPozicio = "d8";
 
 
-foreach (string[] jatek in Jatekok)   
+foreach (string[] jatek in Jatekok)
 {
     feherQueenPozicio = "d1";
     feketeQueenPozicio = "d8";
@@ -64,7 +64,7 @@ foreach (string[] jatek in Jatekok)
         if (jatek[i].Contains('V'))
         {
             if (i % 2 == 1)
-                feketeQueenPozicio = $"{jatek[i][jatek[i].Length-2]}{jatek[i][jatek[i].Length-1]}";
+                feketeQueenPozicio = $"{jatek[i][jatek[i].Length - 2]}{jatek[i][jatek[i].Length - 1]}";
             else
                 feherQueenPozicio = $"{jatek[i][jatek[i].Length - 2]}{jatek[i][jatek[i].Length - 1]}";
         }
@@ -79,21 +79,16 @@ foreach (string[] jatek in Jatekok)
             kiralynoKill = true;
             Console.WriteLine($"feher: {feherQueenPozicio}, kiutes:{jatek[i]}");
         }
-            
+
     }
     if (kiralynoKill)
         melyikekben += $"{jatekSzam};";
     jatekSzam++;
 }
 Console.WriteLine(melyikekben);
-
+*/
 //c. Valasz: 2;4;13;14;18;19;21;
 
-
-
-
-char a = 'b';
-Console.WriteLine(((byte)a));
 
 
 
@@ -116,26 +111,28 @@ foreach (var jatek in Jatekok)
 
             if (i % 2 == 0)
             {
-                if (jatek[i][jatek[i].Length - 1] != feketeQueenPozicio[feketeQueenPozicio.Length-1])
-                {
+                if (jatek[i][jatek[i].Length - 1] != feketeQueenPozicio[feketeQueenPozicio.Length - 1])
                     vezerekLepeseinekSzama += Math.Abs(Convert.ToInt32(feketeQueenPozicio[feketeQueenPozicio.Length - 1]) - Convert.ToInt32(jatek[i][jatek[i].Length - 1]));
-                    feketeQueenPozicio = jatek[i];
-                }              
+                else
+                    vezerekLepeseinekSzama += Math.Abs((byte)feketeQueenPozicio[feketeQueenPozicio.Length - 2] - (byte)jatek[i][jatek[i].Length - 2]);
+
+                feketeQueenPozicio = jatek[i];
             }
             else if (i % 2 == 1)
             {
                 if (jatek[i][jatek[i].Length - 1] != feherQueenPozicio[feherQueenPozicio.Length - 1])
-                {
                     vezerekLepeseinekSzama += Math.Abs(Convert.ToInt32(feherQueenPozicio[feherQueenPozicio.Length - 1]) - Convert.ToInt32(jatek[i][jatek[i].Length - 1]));
-                    feherQueenPozicio = jatek[i];
-                }              
+                else
+                    vezerekLepeseinekSzama += Math.Abs((byte)feketeQueenPozicio[feketeQueenPozicio.Length - 2] - (byte)jatek[i][jatek[i].Length - 2]);
+
+                feherQueenPozicio = jatek[i];
             }
         }
     }
 }
 Console.WriteLine(vezerekLepeseinekSzama);
 */
-//d Valasz: 345
+//d Valasz: 391
 
 
 
