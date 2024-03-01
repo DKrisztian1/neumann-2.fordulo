@@ -4,7 +4,7 @@ List<string[]> Jatekok = new List<string[]>();
 StreamReader sr = new StreamReader("jatszmak.txt");
 while (!sr.EndOfStream)
 {
-    string[] jatek = sr.ReadLine().Split("\t"); ;   
+    string[] jatek = sr.ReadLine().Split("\t"); ;
     Jatekok.Add(jatek);
 }
 sr.Close();
@@ -45,43 +45,97 @@ Console.WriteLine(hanyMezon);
 */
 
 
-
 //c
-/*
+
 string melyikekben = "";
 int jatekSzam = 1;
 bool kiralynoKill = false;
+string feherQueenPozicio = "d1";
+string feketeQueenPozicio = "d8";
 
-string? feherQueenPozicio = null;
-string? feketeQueenPozicio = null;
 
 foreach (string[] jatek in Jatekok)   
 {
+    feherQueenPozicio = "d1";
+    feketeQueenPozicio = "d8";
     kiralynoKill = false;
     for (int i = 0; i < jatek.Length; i++)
     {
         if (jatek[i].Contains('V'))
         {
-            jatek[i].Replace("V", "");
-            jatek[i].Replace("x", "");
-            if (i % 2 == 0)
-                feketeQueenPozicio = jatek[i];
+            if (i % 2 == 1)
+                feketeQueenPozicio = $"{jatek[i][jatek[i].Length-2]}{jatek[i][jatek[i].Length-1]}";
             else
-                feherQueenPozicio = jatek[i];
+                feherQueenPozicio = $"{jatek[i][jatek[i].Length - 2]}{jatek[i][jatek[i].Length - 1]}";
         }
 
-        if (jatek[i].Contains('x') && feketeQueenPozicio != null && jatek[i].Contains(feketeQueenPozicio))
+        if (jatek[i].Contains('x') && jatek[i].Contains(feketeQueenPozicio) && i % 2 == 0)
+        {
             kiralynoKill = true;
-        if (jatek[i].Contains('x') && feherQueenPozicio != null && jatek[i].Contains(feherQueenPozicio))
+            Console.WriteLine($"fekete: {feketeQueenPozicio}, kiutes:{jatek[i]}");
+        }
+        if (jatek[i].Contains('x') && jatek[i].Contains(feherQueenPozicio) && i % 2 == 1)
+        {
             kiralynoKill = true;
+            Console.WriteLine($"feher: {feherQueenPozicio}, kiutes:{jatek[i]}");
+        }
+            
     }
     if (kiralynoKill)
         melyikekben += $"{jatekSzam};";
     jatekSzam++;
 }
 Console.WriteLine(melyikekben);
+
+//c. Valasz: 2;4;13;14;18;19;21;
+
+
+
+
+char a = 'b';
+Console.WriteLine(((byte)a));
+
+
+
+
+//d.
+/*
+int vezerekLepeseinekSzama = 0;
+string feherQueenPozicio = "d1";
+string feketeQueenPozicio = "d8";
+
+
+foreach (var jatek in Jatekok)
+{
+    feherQueenPozicio = "d1";
+    feketeQueenPozicio = "d8";
+    for (int i = 0; i < jatek.Length; i++)
+    {
+        if (jatek[i].Contains('V'))
+        {
+
+            if (i % 2 == 0)
+            {
+                if (jatek[i][jatek[i].Length - 1] != feketeQueenPozicio[feketeQueenPozicio.Length-1])
+                {
+                    vezerekLepeseinekSzama += Math.Abs(Convert.ToInt32(feketeQueenPozicio[feketeQueenPozicio.Length - 1]) - Convert.ToInt32(jatek[i][jatek[i].Length - 1]));
+                    feketeQueenPozicio = jatek[i];
+                }              
+            }
+            else if (i % 2 == 1)
+            {
+                if (jatek[i][jatek[i].Length - 1] != feherQueenPozicio[feherQueenPozicio.Length - 1])
+                {
+                    vezerekLepeseinekSzama += Math.Abs(Convert.ToInt32(feherQueenPozicio[feherQueenPozicio.Length - 1]) - Convert.ToInt32(jatek[i][jatek[i].Length - 1]));
+                    feherQueenPozicio = jatek[i];
+                }              
+            }
+        }
+    }
+}
+Console.WriteLine(vezerekLepeseinekSzama);
 */
-//c. Valasz: 1;2;3;4;5;7;8;9;10;11;13;14;16;18;19;20;21;
+//d Valasz: 345
 
 
 
@@ -108,3 +162,30 @@ foreach (var jatek in Jatekok)
 Console.WriteLine(hany);
 */
 //e Valasz: 10
+
+
+
+
+//f.
+/*
+int hany20 = 0;
+int utesekSzama = 0;
+foreach (var jatek in Jatekok)
+{
+    utesekSzama = 0;
+    foreach (var lepes in jatek)
+    {
+        if (lepes.Contains('x'))
+        {
+            utesekSzama++;
+        }
+    }
+
+    if (32- utesekSzama >= 20)
+    {
+        hany20++;
+    }
+}
+Console.WriteLine(hany20);
+*/
+//f Valasz: 12
